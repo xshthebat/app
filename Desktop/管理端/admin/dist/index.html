@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta http-equiv=X-UA-Compatible content="ie=edge">
+    <title>2018届3G纳新管理页面</title>
+<link href=./css/1.css?fd0ee19335c51141d1cf rel=stylesheet></head>
+
+<body>
+    <div id=header class=flex_center_r>
+        <div id=header_title class=flex_center_c>
+            <p id=header_title_p>2018届3G纳新管理页面</p>
+        </div>
+        <div id=header_nav class=flex_center_r>
+            <div class="header_navs flex_center_c">
+                <p id=nav_android>android</p>
+            </div>
+            <div class="header_navs flex_center_c">
+                <p id=nav_ios>ios</p>
+            </div>
+            <div class="header_navs flex_center_c">
+                <p id=nav_web>web</p>
+            </div>
+            <div class="header_navs flex_center_c">
+                <p id=nav_java>java后台</p>
+            </div>
+        </div>
+    </div>
+    <div id=main class=flex_center_r>
+        <div id=main_menu class=flex_center_c>
+            <div class="main_menu_content flex_center_r">
+                <div id=d_personnum class=flex_center_r>
+                    <p id=personnum>
+                        当前人数:
+                    </p>
+                </div>
+                <div id=d_num>
+                    <p id=num>0</p>
+                </div>
+            </div>
+            <div class="main_menu_content flex_center_r">
+                <div id=search class=flex_center_r>
+                    <input type=text maxlength=10 id=search_t>
+                    <select name=condition id=search_s>
+                        <option value=username>学号</option>
+                        <option value=name>姓名</option>
+                    </select>
+                    <div id=search_b class=flex_center_r>
+                        <p>搜索</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main_menu_content flex_center_r">
+                    <p id=addperson>+</p>
+            </div>
+        </div>
+        <div id=main_content>
+            <div id=main_all></div> 
+            <div id=main_add class=flex_center_c>
+                <div id=add_top class=flex_center_r>
+                    <div id=add_tl>
+                        <div class=add_son>
+                            <label>学号:</label>
+                            <input type=text id=add_num class=border>
+                        </div>
+                        <div class=add_son>
+                            <label>姓名:</label>
+                            <input type=text id=add_name class=border>
+                        </div>
+                        <div class=add_son>
+                            <label>班级:</label>
+                            <input type=text id=add_class class=border>
+                        </div>
+                        <div class=add_son>
+                            <label>电话:</label>
+                            <input type=text id=add_tel class=border>
+                        </div>
+                    </div>
+                    <div id=add_tr>
+                        <div class=add_son>
+                            <label>性别:</label>
+                            <select name=sex id=add_sex>
+                                <option value=男>男</option>
+                                <option value=女>女</option>
+                            </select>
+                        </div>
+                        <div class=add_son>
+                            <label>方向:</label>
+                            <select name=deriction id=add_deriction>
+                                <option value=android>android</option>
+                                <option value=ios>ios</option>
+                                <option value=web>web</option>
+                                <option value=java后台>java后台</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div id=add_but class=flex_center_r>
+                    <div class=add_son id=add_bl>
+                        <label>留言:</label>
+                        <textarea id=add_message cols=50 rows=15></textarea>
+                    </div>
+                    <div id=add_br><p id=add_add>+</p>
+                    <p id=add_back>back</p></div>
+                </div>
+            </div>
+            <div id=main_search class=flex_center_c>
+            </div>
+        </div>
+    </div>
+<script type=text/javascript src=1.js?fd0ee19335c51141d1cf></script></body>
+
+</html>
+
+
+
+
+<!-- <div class="person_body flex_center_r">
+                    <div class="person_bl flex_center_c">
+                        <div class="person_blt flex_center_c">
+                            <div class="person_bltt">
+                                <div>
+                                        <label>姓名:</label>
+                                        <input type="text" value="许世豪" maxlength="3" size="8" class="person_input" readonly="readonly"/>
+                                </div>
+                                <div>
+                                        <label>班级:</label>
+                                        <input type="text" value="计科1601" maxlength="6" size="8" class="person_input" readonly="readonly">
+                                </div>
+                                <div>
+                                        <label>学号:</label>
+                                        <input type="text" value="04161028" maxlength="8" size="8" class="person_input" readonly="readonly">  
+                                </div>
+                            </div>
+                            <div class="person_bltb">
+                                    <div>
+                                            <label>电话:</label>
+                                            <input type="text" value="18392869739" maxlength="11" size="12" class="person_input" readonly="readonly"/>
+                                    </div>
+                                    <div>
+                                        <label>性别</label>
+                                        <select name="sex" class="person_s" disabled="disabled">
+                                                <option value="男">男</option>
+                                                <option value="女">女</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                            <label>方向</label>
+                                            <select name="derition" class="person_s" disabled="disabled">
+                                                    <option value="android">android</option>
+                                                    <option value="ios">ios</option>
+                                                    <option value="web">web</option>
+                                                    <option value="jave">java后台</option>
+                                            </select>
+                                        </div>
+                            </div>
+                        </div>
+                        <div class="person_blb">
+                            <p class="person_blbp">留言</p>
+                            <textarea  class="person_message"></textarea>
+                        </div>
+                    </div>
+                    <div class="person_br">
+                        <div class="person_brd"><p>修改</p></div>
+                        <div class="person_brd"><p>删除</p></div>
+                        <div class="person_brd"><select name="status" class="person_status" disabled="disabled">
+                                <option value="login">报名</option>
+                                <option value="pass1">一面通过</option>
+                                <option value="pass2">二面通过</option>
+                                <option value="pass3">三面通过</option>
+                                <option value="go">发光</option>
+                        </select></div>
+                        <div class="person_brd"><p>发光</p></div>
+                    </div>
+                </div> -->
